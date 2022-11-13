@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de rencontre</title>
+</head>
+
+<body>
+    <div>
+        <form action="">
+            <fieldset>
+                <legend><b>Informations</b></legend>
+                <label for="nom">Nom : </label>
+                <input type="text" name="nom" placeholder="Nom" pattern="^[A-z]{2,45}$" /> <br />
+                <label for="prénom">Prénom : </label>
+                <input type="text" name="prénom" placeholder="Prénom" pattern="^[A-z]{2,45}$"> <br />
+                <label for="email">E-mail : </label>
+                <input type="email" name="email" placeholder="E-mail"
+                    pattern="^\w+\.\w*\@[a-z]+(\.|\-)*[a-z]*(\.|\-)*[a-z]*(\.com|\.fr|\.org|\.net){1}$" /> <br />
+                <label for="male">Masculin </label>
+                <input type="radio" name="sexe" id="male" />
+                <label for="female">Féminin </label>
+                <input type="radio" name="sexe" id="female" checked /> <br />
+                <label for="image">Photo : </label>
+                <input type="file" name="image" accept=".jpeg, .png" /> <br />
+                <label for="pays">Pays : </label>
+                <input hidden list="list_pays" name="pays" />
+                <select name="langue" id="list_pays">
+                    <option value="1">FRANCE</option>
+                    <option value="2">ANGLETERRE</option>
+                    <option value="3" selected>ALLEMAGNE</option>
+                    <option value="4">ITALIE</option>
+                    <option value="5">SUISSE</option>
+                    <option value="6">ESPAGNE</option>
+                </select>
+                <label for="langue">Langue : </label>
+                <input hidden list="langue_list" name="langue" />
+                <select multiple name="langue" id="langue_list">
+                    <option value="1">FRANCAIS</option>
+                    <option value="2">ANGLAIS</option>
+                    <option value="3">ALLEMAND</option>
+                    <option value="4">ITALIEN</option>
+                    <option value="5">ESPAGNOL</option>
+                </select> <br />
+                <label for="plombier">Plombier</label>
+                <input type="radio" name="metier" id="plombier" />
+                <label for="electricien">Electricien</label>
+                <input type="radio" name="metier" id="electricien" />
+                <label for="macon">Maçon</label>
+                <input type="radio" name="metier" id="macon" />
+                <label for="carreleur">Carreleur</label>
+                <input type="radio" name="metier" id="carreleur" />
+                <label for="menuisier">Menuisier</label>
+                <input type="radio" name="metier" id="menuisier" />
+                <label for="couvreur">Couvreur</label>
+                <input type="radio" name="metier" id="couvreur" />
+            </fieldset>
+            <div class="button">
+                <button type="submit">Commander</button> <button type="reset">Recommencer</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

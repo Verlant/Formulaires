@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+</head>
+
+<body>
+    <main>
+        <h1>Formulaire</h1>
+        <h2>Contactez nous</h2>
+        <form action="">
+            Sexe : <input type="radio" name="Femme" id="female">
+            <label for="female">Femme</label>
+            <input type="radio" name="Male" id="male">
+            <label for="male">Homme</label> <br><br>
+            <label for="nom">Nom :</label>
+            <input type="text" name="nom" id="nom">
+            <label for="prenom">Prénom :</label>
+            <input type="text" name="prenom" id="prenom"> <br><br>
+            <label for="age">&Acirc;ge : </label>
+            <input type="number" name="age" id="age"> <br><br>
+            <label for="mdp">Mot de passe : </label>
+            <input type="password" name="mdp" id="mdp"> <br>
+            <p>Commentaire : </p>
+            <textarea cols="40" rows="10"></textarea> <br><br>
+            <label for="pays">Pays :</label>
+            <input hidden list="list_pays" name="pays" id="pays">
+            <select id="list_pays" size="2">
+                <option value="1">France</option>
+                <option value="2">Espagne</option>
+            </select><br><br>
+            Souhaitez vous être contacté par email :
+            <input type="radio" name="contact" id="oui">
+            <label for="oui">Oui</label>
+            <input type="radio" name="contact" id="non">
+            <label for="non">Non</label> <br>
+            <label for="email">Si oui, Email :</label>
+            <input type="email" name="email" id="email"> <br>
+            <button>Validez</button>
+        </form>
+    </main>
+</body>
+
+</html>

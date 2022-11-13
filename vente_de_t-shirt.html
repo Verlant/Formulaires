@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vente de T-Shirt</title>
+    <style>
+        p {
+            word-spacing: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend><i>Client</i></legend>
+                <label for="nom">Nom et prénom : </label>
+                <input type="text" name="nom" placeholder="Nom et prénom"
+                    pattern="^([A-Z]+)\s([A-Z]{1}[a-z]+)$" /><br />
+                <label for="adresse">Adresse : </label>
+                <input type="text" name="adresse" /><br />
+                <label for="code_postal">Code Postal : </label>
+                <input type="text" name="code_postal" pattern="^[0-9]{5}$" /><br />
+                <label for="pays">Pays : </label>
+                <input type="text" name="pays" value="France" readonly /><br />
+            </fieldset>
+            <fieldset>
+                <legend><i>Commande</i></legend>
+                <label for="modele">Modèle : </label>
+                <input type="text" name="modele" value="Road 66" /><br />
+                <label for="taille">Taille : </label> <br />
+                <input type="range" name="taille" min="0" max="3" />
+                <p>S M L XL</p>
+                <label for="quantite">Quantité : </label>
+                <input type="number" name="quantite" min="1" max="165" step="3" /><br />
+            </fieldset>
+            <button type="submit">Commander</button> <button type="reset">Recommencer</button>
+        </form>
+    </main>
+</body>
+
+</html>
